@@ -140,10 +140,11 @@ if(BUILD_SHARED_LIBS)
   set_target_properties(ImGui-SFML PROPERTIES
     DEFINE_SYMBOL "IMGUI_SFML_EXPORTS"
   )
-  set_target_properties(ImGui-SFML PROPERTIES
+  
+endif()
+set_target_properties(ImGui-SFML PROPERTIES
     DEBUG_POSTFIX "_d"
   )
-endif()
 
 set(IMGUI_SFML_PUBLIC_HEADERS
   "${CMAKE_CURRENT_LIST_DIR}/imgui-SFML.h"
